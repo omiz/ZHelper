@@ -14,6 +14,6 @@ import UIKit
  Get the root view controller based on UIApplication.shared.keyWindow
  
  */
-func getRoot() -> UIViewController? {
+public func getRoot() -> UIViewController? {
    return UIApplication.shared.keyWindow?.rootViewController
 }

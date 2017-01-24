@@ -13,7 +13,7 @@ import Foundation
  Get a method from an object
 
  */
-func extract(_ selector: Selector, from owner: AnyObject) -> ((Swift.Void) -> AnyObject)? {
+public func extract(_ selector: Selector, from owner: AnyObject) -> ((Swift.Void) -> AnyObject)? {
 
    let method: Method
 

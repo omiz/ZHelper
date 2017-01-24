@@ -19,7 +19,7 @@ import Foundation
  - Parameters:
    - key: the text to localize
  */
-func localize(_ key: String) -> String {
+public func localize(_ key: String) -> String {
    return NSLocalizedString(key, comment: "")
 }
 
@@ -35,6 +35,6 @@ func localize(_ key: String) -> String {
    - key: the text to localize
    - arguments: the arguments of type CVarArg
  */
-func localize(_ key: String,_ arguments: CVarArg) -> String {
+public func localize(_ key: String,_ arguments: CVarArg) -> String {
    return String.localizedStringWithFormat(localize(key), arguments)
 }

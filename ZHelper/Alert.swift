@@ -18,7 +18,7 @@ import UIKit
    - action: the action text default is a localized 'Ok'
    - handler: the hanlder on action click Optional
  */
-func alert(_ title: String?, message: String?, action: String? = nil, handler: ((UIAlertAction) -> Swift.Void)? = nil) {
+public func alert(_ title: String?, message: String?, action: String? = nil, handler: ((UIAlertAction) -> Swift.Void)? = nil) {
 
    if let controller = getRoot() {
 
@@ -46,6 +46,6 @@ func alert(_ title: String?, message: String?, action: String? = nil, handler: (
  - Parameters:
    - error: used to show the message body through error?.localizedDescription
  */
-func alert(_ error: Error?) {
+public func alert(_ error: Error?) {
    alert(localize("Error"), message: error?.localizedDescription)
 }

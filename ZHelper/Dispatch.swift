@@ -16,7 +16,7 @@ import Foundation
    - seconds: the delay time in seconds Double
    - closure: the delayed closure () -> Void
  */
-func delay(_ seconds: Double, closure: @escaping () -> Void) {
+public func delay(_ seconds: Double, closure: @escaping () -> Void) {
 
    let delayTime = DispatchTime.now() + Double(Int64(Double(seconds) * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
    DispatchQueue.main.asyncAfter(deadline: delayTime) {

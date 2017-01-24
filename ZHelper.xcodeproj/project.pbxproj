@@ -317,6 +317,7 @@
 				E0896D9E1E34FB93007FE791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
